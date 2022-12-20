@@ -1,0 +1,5 @@
+#!/bin/sh
+
+## kill "$(pstree -lp | grep -- -dwmbar\([0-9] | sed "s/.*sleep(\([0-9]\+\)).*/\1/")"
+## kill "$(ps ax | grep dwmbar | grep -v grep | cut -d' ' -f1)"
+kill "$(pstree -lp | grep -- -bash\([0-9]*\) | grep sleep | sed 's/sleep/:/' | cut -d':' -f2 | tr '(' ' ' | tr ')' ' ')"
