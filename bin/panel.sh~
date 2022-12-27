@@ -1,0 +1,11 @@
+#!/bin/sh
+#
+
+CONDIR=~/.config/tint2/tint2-theme-collections/minima/minima.tint2rc
+
+# kill tint2 
+kill $(pidof tint2)
+
+# start tint2
+
+tint2 -
