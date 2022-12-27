@@ -1,6 +1,6 @@
 # My Dotfiles
 
-![screenshot](https://github.com/dradmin007/dotfiles/scr.jpeg)
+![screenshot](https://github.com/dradmin007/dotfiles/scr.jpg)
 
 
 ## get Weather script
