@@ -1,4 +1,0 @@
-#!/bin/sh
-
-curl --silent "https://wttr.in/Moscow?0TQ&lang=ru" -o /tmp/weather-msk
-echo "$(cat /tmp/weather-msk | head -2 | cut -c 17- | tr '\n' ' ')"

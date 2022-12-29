@@ -10,10 +10,10 @@ BACKDIR=$HOME/Projects/dotfiles
 [ -d $BACKDIR ] || mkdir $BACKDIR
 
 for i in $DIRS ;do 
-	rsync -auizL $i $BACKDIR
+	rsync -auizLo --exclude '*~' --exclude '*.bak' $i $BACKDIR
 done
 
 for i in $FILES ; do 
-	rsync -auizL $i $BACKDIR
+	rsync -auizL --exclude '*~' --exclude '*.bak' $i $BACKDIR
 done
 

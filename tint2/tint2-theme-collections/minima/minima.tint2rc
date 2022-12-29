@@ -112,7 +112,7 @@ border_color_pressed = #eaeaea 44
 
 #-------------------------------------
 # Panel
-panel_items = TSBC
+panel_items = TSBEEEC
 panel_size = 100% 20
 panel_margin = 2 2
 panel_padding = 2 0 20
@@ -239,6 +239,75 @@ battery_uwheel_command =
 battery_dwheel_command = 
 ac_connected_cmd = 
 ac_disconnected_cmd = 
+
+#---------------------------------------
+# Executor (volume show)
+execp = new
+execp_command = $HOME/bin/get-volume.sh
+execp_interval = 1 
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 1
+execp_markup = 0
+execp_tooltip = 
+execp_1click_command =
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Noto Sans 8
+execp_font_color = #ffffff 100
+execp_padding = 4 2
+execp_background_id = 7
+execp_centered = 0
+execp_icon_w = 100
+execp_icon_h = 100
+
+#---------------------------------------
+# Executor (network show)
+execp = new
+execp_command = $HOME/bin/showconn.sh
+execp_interval = 1800
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 1
+execp_markup = 0
+execp_tooltip = 
+execp_1click_command =
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Noto Sans 8
+execp_font_color = #ffffff 100
+execp_padding = 4 2
+execp_background_id = 2
+execp_centered = 0
+execp_icon_w = 100
+execp_icon_h = 100
+
+#---------------------------------------
+# Executor (Updates show)
+execp = new
+execp_command = $HOME/bin/show-updates.sh
+execp_interval = 1800 
+execp_has_icon = 0
+execp_cache_icon = 1
+execp_continuous = 1
+execp_markup = 0
+execp_tooltip = 
+execp_1click_command =
+execp_rclick_command = 
+execp_mclick_command = 
+execp_uwheel_command = 
+execp_dwheel_command = 
+execp_font = Noto Sans 8
+execp_font_color = #ffffff 100
+execp_padding = 4 2
+execp_background_id = 6
+execp_centered = 0
+execp_icon_w = 100
+execp_icon_h = 100
 
 #-------------------------------------
 # Tooltip

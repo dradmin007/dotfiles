@@ -30,6 +30,18 @@ hc keybind Mod1-Shift-Return spawn dmenu_run -fn 'FiraMono:size=12' -nb '#292d3e
 hc keybind Mod1-Shift-i spawn $HOME/bin/weather.sh
 # Help
 hc keybind Mod1-Shift-h spawn $HOME/bin/show-desktop.sh
+# screenshots
+hc keybind $Mod-Shift-p spawn $HOME/bin/cr-shot.sh
+# Browsers
+hc keybind $Mod-Shift-b spawn vimb
+hc keybind $Mod-Shift-n spawn qutebrowser
+hc keybind $Mod-Shift-f spawn firefox
+# Media keys
+#
+hc keybind XF86AudioLowerVolume spawn $HOME/bin/set-volume.sh dec 5
+hc keybind XF86AudioRaiseVolume spawn $HOME/bin/set-volume.sh inc 5
+hc keybind XF86MonBrightnessUp spawn xbacklight -inc 5 -time 10
+hc keybind XF86MonBrightnessDown spawn xbacklight -dec 5 -time 10
 
 # ---------------------------- #
 # Focusing client
@@ -112,7 +124,9 @@ hc rule class~'(.*[Rr]xvt.*|.*[Tt]erm)' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(DIALOG|UTILITY|SPLASH)' pseudotile=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_DIALOG' focus=on
 hc rule windowtype~'_NET_WM_WINDOW_TYPE_(NOTIFICATION|DOCK|DESKTOP)' manage=off
-
+hc rule class='firefox-default' tag=" www " 
+hc rule class='vimb' tag=" www "  
+hc rule class='qutebrowser' tag=" www " 
 
 
 # -------------------------------------- #
