@@ -14,6 +14,6 @@ for i in $DIRS ;do
 done
 
 for i in $FILES ; do 
-	rsync -auizL --exclude '*~' --exclude '*.bak' $i $BACKDIR
+	rsync -auizL --exclude '*~' --exclude '*.bak'  $i $BACKDIR
 done
 
