@@ -1,6 +1,10 @@
 # My Dotfiles
 
-![screenshot](https://github.com/dradmin007/dotfiles/scr.jpg)
+# News 2025-05-16
+* add new dotfiles for WM: awesome i3wm fluxbox icewm
+* add new scripts 
+
+![screenshot](scr.jpg)
 
 
 ## get Weather script
