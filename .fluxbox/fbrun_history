@@ -1,0 +1,6 @@
+gnome-terminal
+rxvt
+rofi -show run
+rofi -show window
+firefox
+urxvt
